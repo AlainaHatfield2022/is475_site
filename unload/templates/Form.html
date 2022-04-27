@@ -1,7 +1,9 @@
 
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="{% static 'css/475_data.css' %}">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
         <title>
             Form
@@ -13,15 +15,20 @@
            <div id="wrapper"></div>
         <header><h1>Unload</h1></header>
             <nav>
-                <a href="index.html">Home&nbsp;</a>
-                <a href="Leaderboard.html">Leaderboard</a>
-                <a href="form.html">Form</a>
-        </nav>
+                <a href="{% url 'home' %}">Home&nbsp;</a>
+                <a href="{% url 'board' %}">Leaderboard</a>
+                <a href="{% url 'form' %}">Form</a>
+            </nav>
 
         <div class="container"> 
             <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdcZ73XpFMpujyu71J9-9NkPaEU6O1ZxZK_LEGYwzCLAQZMZQ/viewform?embedded=true" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…></iframe>
             </div>
         <div id="homehero"></div>   
     </body>
-
+    <footer>
+     Copyright © 2022 
+    <br>
+    
+    </footer>
+</html>
         
